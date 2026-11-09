@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Secure Checkout | SENORA — Luxury Modest Fashion</title>
+  <meta name="description" content="Complete your SENORA order: delivery, tailoring notes and payment, in three quiet steps.">
+  <meta name="robots" content="noindex">
+  <meta name="theme-color" content="#111111">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="page-checkout">
+
+  <a href="#mainContent" class="skip-link">Skip to checkout</a>
+
+  <!-- Slim checkout header -->
+  <header class="co-header" role="banner">
+    <div class="co-header-inner">
+      <a href="shop.html" class="co-back"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M19 12H5M12 19l-7-7 7-7"/></svg><span>Continue shopping</span></a>
+      <a href="index.html" class="co-brand" aria-label="SENORA home"><span class="brand-title">SENORA</span><span class="brand-sub">MODEST ATELIER</span></a>
+      <div class="co-secure"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><rect x="5" y="11" width="14" height="9" rx="1"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg><span>Secure checkout</span></div>
+    </div>
+  </header>
+
+  <main id="mainContent" class="co-main">
+
+    <!-- Checkout flow -->
+    <div id="coFlow">
+      <div class="co-intro">
+        <span class="co-kicker">Checkout</span>
+        <h1>Complete your <em>order</em></h1>
+        <ol class="co-progress" id="coProgress" aria-label="Checkout progress">
+          <li class="is-current" data-progress="info"><span>1</span>Information</li>
+          <li data-progress="delivery"><span>2</span>Delivery</li>
+          <li data-progress="payment"><span>3</span>Payment</li>
+        </ol>
+      </div>
+
+      <div class="co-layout">
+
+        <!-- Order summary (first on mobile) -->
+        <aside class="co-summary" id="coSummary" aria-label="Order summary">
+          <button type="button" class="co-summary-toggle" id="coSummaryToggle" aria-expanded="false" aria-controls="coSummaryBody">
+            <span class="co-toggle-label">Show order summary <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg></span>
+            <strong id="coToggleTotal">PKR 0</strong>
+          </button>
+          <div class="co-summary-body" id="coSummaryBody">
+            <h2 class="co-summary-title">Your <em>bag</em></h2>
+            <ul class="co-items" id="coItems"></ul>
+
+            <form class="co-promo" id="coPromoForm" novalidate>
+              <label for="coPromo" class="sr-only">Promo code</label>
+              <input type="text" id="coPromo" placeholder="Promo code" autocomplete="off" autocapitalize="characters">
+              <button type="submit">Apply</button>
+            </form>
+            <p class="co-promo-msg" id="coPromoMsg" role="status" aria-live="polite"></p>
+
+            <dl class="co-totals">
+              <div><dt>Subtotal</dt><dd id="coSubtotal">PKR 0</dd></div>
+              <div id="coDiscountRow" hidden><dt>Discount <span id="coDiscountCode"></span></dt><dd id="coDiscount">- PKR 0</dd></div>
+              <div><dt>Delivery</dt><dd id="coShipping">PKR 0</dd></div>
+              <div><dt>Taxes</dt><dd>Included</dd></div>
+              <div class="co-grand"><dt>Total</dt><dd id="coTotal">PKR 0</dd></div>
+            </dl>
+
+            <div class="co-meter" id="coMeter">
+              <p id="coMeterText"></p>
+              <div class="co-meter-track"><span id="coMeterBar"></span></div>
+            </div>
+
+            <ul class="co-assurances">
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3" aria-hidden="true"><path d="M4 20L20 4M7 4h4M4 7v4M13 20h4M20 13v4"/></svg>Complimentary alterations included</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3" aria-hidden="true"><rect x="3" y="8" width="18" height="12" rx="1"/><path d="M3 12h18M12 8v12"/></svg>Wrapped in our signature box</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>Private concierge support</li>
+            </ul>
+          </div>
+        </aside>
+
+        <!-- Steps -->
+        <div class="co-forms">
+
+          <!-- Step 1 -->
+          <section class="co-step is-active" id="stepInfo" data-step="info" aria-labelledby="stepInfoTitle">
+            <header class="co-step-head">
+              <span class="co-step-num" aria-hidden="true">1</span>
+              <h2 id="stepInfoTitle">Contact &amp; delivery address</h2>
+              <button type="button" class="co-edit" data-edit="info" hidden>Edit</button>
+            </header>
+            <p class="co-recap" id="recapInfo" hidden></p>
+            <div class="co-step-body">
+              <div class="co-account-bar" id="coAccountBar">
+                <span id="coAccountText">Already have an account?</span>
+                <button type="button" class="co-linkbtn" id="coAccountBtn">Sign in</button>
+              </div>
+              <form id="formInfo" novalidate autocomplete="on">
+                <div class="co-grid">
+                  <div class="co-field co-span-2">
+                    <label for="coEmail">Email address</label>
+                    <input type="email" id="coEmail" name="email" autocomplete="email" inputmode="email" aria-describedby="err-coEmail" required>
+                    <p class="co-error" id="err-coEmail" role="alert"></p>
+                  </div>
+                  <div class="co-field">
+                    <label for="coName">Full name</label>
+                    <input type="text" id="coName" name="name" autocomplete="name" aria-describedby="err-coName" required>
+                    <p class="co-error" id="err-coName" role="alert"></p>
+                  </div>
+                  <div class="co-field">
+                    <label for="coPhone">Mobile number</label>
+                    <input type="tel" id="coPhone" name="phone" autocomplete="tel" inputmode="tel" placeholder="03XX XXXXXXX" aria-describedby="err-coPhone" required>
+                    <p class="co-error" id="err-coPhone" role="alert"></p>
+                  </div>
+                  <div class="co-field co-span-2">
+                    <label for="coAddress">Street address</label>
+                    <input type="text" id="coAddress" name="address" autocomplete="address-line1" aria-describedby="err-coAddress" required>
+                    <p class="co-error" id="err-coAddress" role="alert"></p>
+                  </div>
+                  <div class="co-field co-span-2">
+                    <label for="coAddress2">Apartment, floor or landmark <em>(optional)</em></label>
+                    <input type="text" id="coAddress2" name="address2" autocomplete="address-line2">
+                  </div>
+                  <div class="co-field">
+                    <label for="coCity">City</label>
+                    <select id="coCity" name="city" autocomplete="address-level2" aria-describedby="err-coCity" required>
+                      <option value="">Select a city</option>
+                      <option>Lahore</option><option>Karachi</option><option>Islamabad</option><option>Rawalpindi</option>
+                      <option>Faisalabad</option><option>Multan</option><option>Peshawar</option><option>Quetta</option>
+                      <option>Sialkot</option><option>Gujranwala</option><option>Hyderabad</option><option>Other city</option>
+                    </select>
+                    <p class="co-error" id="err-coCity" role="alert"></p>
+                  </div>
+                  <div class="co-field">
+                    <label for="coPostal">Postal code <em>(optional)</em></label>
+                    <input type="text" id="coPostal" name="postal" autocomplete="postal-code" inputmode="numeric">
+                  </div>
+                </div>
+
+                <div class="co-tailor">
+                  <div class="co-tailor-head">
+                    <span class="co-tailor-label">Tailoring</span>
+                    <p>Tell us your height and our atelier will adjust the length of your piece at no additional cost.</p>
+                  </div>
+                  <div class="co-field">
+                    <label for="coHeight">Your height <em>(optional)</em></label>
+                    <input type="text" id="coHeight" name="height" placeholder="e.g. 5'6&quot; or 168 cm" maxlength="20">
+                  </div>
+                </div>
+
+                <label class="co-check"><input type="checkbox" id="coGift"><span class="co-box" aria-hidden="true"></span><span>This order is a gift</span></label>
+                <div class="co-gift" id="coGiftWrap" hidden>
+                  <div class="co-field">
+                    <label for="coGiftMsg">Handwritten note <em>(optional)</em></label>
+                    <textarea id="coGiftMsg" rows="3" maxlength="200" placeholder="Written by hand and placed inside the box. Prices are left off the packing slip."></textarea>
+                    <span class="co-count" id="coGiftCount">0 / 200</span>
+                  </div>
+                </div>
+
+                <label class="co-check" id="coSaveDetailsRow" hidden><input type="checkbox" id="coSaveDetails" checked><span class="co-box" aria-hidden="true"></span><span>Save these details to my account</span></label>
+
+                <button type="submit" class="co-btn">Continue to delivery</button>
+              </form>
+            </div>
+          </section>
+
+          <!-- Step 2 -->
+          <section class="co-step is-locked" id="stepDelivery" data-step="delivery" aria-labelledby="stepDeliveryTitle">
+            <header class="co-step-head">
+              <span class="co-step-num" aria-hidden="true">2</span>
+              <h2 id="stepDeliveryTitle">Delivery method</h2>
+              <button type="button" class="co-edit" data-edit="delivery" hidden>Edit</button>
+            </header>
+            <p class="co-recap" id="recapDelivery" hidden></p>
+            <div class="co-step-body">
+              <form id="formDelivery" novalidate>
+                <fieldset class="co-options" id="coDeliveryOptions">
+                  <legend class="sr-only">Choose a delivery method</legend>
+                </fieldset>
+                <button type="submit" class="co-btn">Continue to payment</button>
+              </form>
+            </div>
+          </section>
+
+          <!-- Step 3 -->
+          <section class="co-step is-locked" id="stepPayment" data-step="payment" aria-labelledby="stepPaymentTitle">
+            <header class="co-step-head">
+              <span class="co-step-num" aria-hidden="true">3</span>
+              <h2 id="stepPaymentTitle">Payment</h2>
+            </header>
+            <div class="co-step-body">
+              <form id="formPayment" novalidate>
+                <fieldset class="co-options" id="coPaymentOptions">
+                  <legend class="sr-only">Choose a payment method</legend>
+
+                  <label class="co-option is-selected">
+                    <input type="radio" name="payment" value="cod" checked>
+                    <span class="co-radio" aria-hidden="true"></span>
+                    <span class="co-option-main"><strong>Cash on delivery</strong><small>Pay in cash when your order arrives. Our courier will confirm by phone first.</small></span>
+                  </label>
+
+                  <label class="co-option">
+                    <input type="radio" name="payment" value="bank">
+                    <span class="co-radio" aria-hidden="true"></span>
+                    <span class="co-option-main"><strong>Direct bank transfer</strong><small>Transfer to our account and send us the receipt. Your order is prepared once it clears.</small></span>
+                  </label>
+                  <div class="co-pay-panel" id="panelBank" hidden>
+                    <dl>
+                      <div><dt>Bank</dt><dd><span class="ph">[Bank name]</span></dd></div>
+                      <div><dt>Account title</dt><dd><span class="ph">[Account title]</span></dd></div>
+                      <div><dt>IBAN</dt><dd><span class="ph">[IBAN]</span></dd></div>
+                    </dl>
+                    <p>Please use your order number as the payment reference. It is shown on the confirmation page.</p>
+                  </div>
+
+                  <label class="co-option">
+                    <input type="radio" name="payment" value="card">
+                    <span class="co-radio" aria-hidden="true"></span>
+                    <span class="co-option-main"><strong>Credit or debit card</strong><small>Visa, Mastercard and UnionPay.</small></span>
+                    <span class="co-card-logos" aria-hidden="true"><i>VISA</i><i>MC</i><i>UP</i></span>
+                  </label>
+                  <div class="co-pay-panel" id="panelCard" hidden>
+                    <div class="co-grid">
+                      <div class="co-field co-span-2">
+                        <label for="coCardNumber">Card number <span class="co-brand-tag" id="coBrandTag"></span></label>
+                        <input type="text" id="coCardNumber" inputmode="numeric" autocomplete="cc-number" placeholder="0000 0000 0000 0000" maxlength="23" aria-describedby="err-coCardNumber">
+                        <p class="co-error" id="err-coCardNumber" role="alert"></p>
+                      </div>
+                      <div class="co-field co-span-2">
+                        <label for="coCardName">Name on card</label>
+                        <input type="text" id="coCardName" autocomplete="cc-name" aria-describedby="err-coCardName">
+                        <p class="co-error" id="err-coCardName" role="alert"></p>
+                      </div>
+                      <div class="co-field">
+                        <label for="coCardExp">Expiry</label>
+                        <input type="text" id="coCardExp" inputmode="numeric" autocomplete="cc-exp" placeholder="MM / YY" maxlength="7" aria-describedby="err-coCardExp">
+                        <p class="co-error" id="err-coCardExp" role="alert"></p>
+                      </div>
+                      <div class="co-field">
+                        <label for="coCardCvc">Security code</label>
+                        <input type="password" id="coCardCvc" inputmode="numeric" autocomplete="cc-csc" placeholder="CVC" maxlength="4" aria-describedby="err-coCardCvc">
+                        <p class="co-error" id="err-coCardCvc" role="alert"></p>
+                      </div>
+                    </div>
+                    <p class="co-demo-note">Demo preview: card details are checked for format only. They are never sent or stored.</p>
+                  </div>
+                </fieldset>
+
+                <label class="co-check co-terms">
+                  <input type="checkbox" id="coTerms" aria-describedby="err-coTerms"><span class="co-box" aria-hidden="true"></span>
+                  <span>I agree to the <a href="terms.html">Terms of Sale</a> and <a href="privacy.html">Privacy Policy</a>.</span>
+                </label>
+                <p class="co-error" id="err-coTerms" role="alert"></p>
+
+                <button type="submit" class="co-btn co-btn-place" id="coPlaceBtn"><span class="co-btn-label">Place order</span><span class="co-btn-total" id="coPlaceTotal">PKR 0</span></button>
+                <p class="co-demo-note co-center">Demo preview: no order is placed and no payment is taken.</p>
+              </form>
+            </div>
+          </section>
+        </div>
+      </div>
+    </div>
+
+    <!-- Empty bag -->
+    <section class="co-empty" id="coEmpty" hidden aria-labelledby="coEmptyTitle">
+      <span class="co-kicker">Your bag</span>
+      <h1 id="coEmptyTitle">Your bag is <em>empty</em></h1>
+      <p>Nothing here yet. Browse the collection and your selections will wait for you.</p>
+      <div class="co-empty-links">
+        <a href="shop.html" class="co-btn co-btn-inline">Shop the collection</a>
+        <a href="collections.html" class="coll-cta">View the collections</a>
+      </div>
+    </section>
+
+    <!-- Confirmation -->
+    <section class="co-confirm" id="coConfirm" hidden aria-labelledby="coConfirmTitle">
+      <svg class="co-ring" viewBox="0 0 120 120" aria-hidden="true">
+        <circle cx="60" cy="60" r="54" fill="none" stroke="currentColor" stroke-width="1.2"/>
+        <path d="M38 62l16 16 30-34" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+      <span class="co-kicker">Order received</span>
+      <h1 id="coConfirmTitle" tabindex="-1">Thank you, <em id="coConfirmName"></em></h1>
+      <p class="co-confirm-lede">Your order is with our atelier. Every piece is pressed, checked and wrapped by hand before it leaves Lahore.</p>
+      <div class="co-order-no"><span>Order number</span><strong id="coOrderNo"></strong></div>
+
+      <div class="co-confirm-grid">
+        <div><h3>Delivering to</h3><p id="coConfirmAddress"></p></div>
+        <div><h3>Delivery</h3><p id="coConfirmDelivery"></p></div>
+        <div><h3>Payment</h3><p id="coConfirmPayment"></p></div>
+      </div>
+
+      <ul class="co-confirm-items" id="coConfirmItems"></ul>
+      <dl class="co-totals co-confirm-totals" id="coConfirmTotals"></dl>
+
+      <div class="co-save" id="coSave" hidden>
+        <h2>Keep your details for <em>next time</em></h2>
+        <p>Create an account in one step. We will keep this order, your address and your height, so next time is effortless.</p>
+        <ul class="co-save-list"><li>Follow this order in My Account</li><li>Your address and length remembered</li><li>Order again in a click</li></ul>
+        <form id="coSaveForm" novalidate>
+          <div class="co-grid">
+            <div class="co-field"><label for="svPass">Choose a password</label><input type="password" id="svPass" autocomplete="new-password" aria-describedby="err-svPass svHint"><p class="acct-hint" id="svHint">At least 8 characters, with a letter and a number.</p><p class="co-error" id="err-svPass" role="alert"></p></div>
+            <div class="co-field"><label for="svPass2">Confirm password</label><input type="password" id="svPass2" autocomplete="new-password" aria-describedby="err-svPass2"><p class="co-error" id="err-svPass2" role="alert"></p></div>
+          </div>
+          <button type="submit" class="co-btn co-btn-inline">Create my account</button>
+          <p class="co-demo-note">Demo preview: your password is never stored or checked.</p>
+        </form>
+      </div>
+      <p class="co-saved-note" id="coSavedNote" hidden></p>
+
+      <p class="co-demo-note co-center">Demo preview: this order was not actually placed, and no confirmation email will be sent.</p>
+      <div class="co-empty-links">
+        <a href="shop.html" class="co-btn co-btn-inline">Continue shopping</a>
+        <a href="index.html" class="coll-cta">Return home</a>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="co-footer">
+    <span>&copy; 2026 SENORA Modest Fashion Atelier</span>
+    <nav aria-label="Legal"><a href="privacy.html">Privacy Policy</a><a href="terms.html">Terms of Sale</a><a href="concierge.html">Contact Concierge</a></nav>
+  </footer>
+
+  <div class="co-toast" id="coToast" role="status" aria-live="polite"></div>
+
+  <script src="js/account.js"></script>
+  <script src="js/checkout.js"></script>
+</body>
+</html>

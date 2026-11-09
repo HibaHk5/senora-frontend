@@ -1,0 +1,674 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Collections | SENORA — Luxury Modest Fashion</title>
+  
+  <meta name="description" content="Four capsule collections from the SENORA atelier: the Nocturne abayas, Sand &amp; Stillness co-ords, the Alabaster Series and Winter Cashmere outerwear.">
+  <meta name="keywords" content="modest fashion, luxury abayas, co-ords, modest dresses, atelier outerwear, Pakistani designer, raw silk, quiet luxury">
+  <meta name="theme-color" content="#111111">
+  
+  <!-- Typography Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="page-collections">
+
+  <!-- Accessible Skip to Content -->
+  <a href="#mainContent" class="skip-link">Skip to collections content</a>
+
+  <!-- 1. Editorial Announcement Bar -->
+  <aside class="announcement-bar" role="region" aria-label="Atelier Updates">
+    <div class="announcement-container">
+      <div class="announcement-meta">THE AUTUMN EDIT</div>
+      <div class="announcement-text">
+        Complimentary express delivery across Pakistan on orders over <strong>PKR 25,000</strong>
+      </div>
+      <div class="announcement-controls">
+        <span class="currency-badge">PKR ₨</span>
+        <a href="concierge.html" class="announcement-service">Atelier Service</a>
+      </div>
+    </div>
+  </aside>
+
+  <!-- 2. Sticky Master Navigation Header -->
+  <header class="site-header" role="banner" id="siteHeader">
+    <div class="header-container">
+      
+      <!-- Left: Primary Navigation -->
+      <nav class="nav-primary" aria-label="Primary Navigation">
+        <a href="index.html" class="nav-link" data-nav="home">Home</a>
+        <a href="shop.html" class="nav-link" data-nav="shop">Shop</a>
+        <a href="collections.html" class="nav-link is-active" data-nav="collections">Collections</a>
+        <a href="lookbook.html" class="nav-link" data-nav="lookbook">Lookbook</a>
+        <a href="story.html" class="nav-link" data-nav="story">Our Story</a>
+      </nav>
+
+      <!-- Mobile Hamburger Toggle -->
+      <button class="nav-toggle" id="mobileNavToggle" type="button" aria-label="Open mobile navigation menu" aria-expanded="false" aria-controls="mobileNavDrawer">
+        <span></span>
+        <span></span>
+      </button>
+
+      <!-- Center: Brand Wordmark -->
+      <div class="brand-mark">
+        <a href="index.html" aria-label="SENORA Home">
+          <span class="brand-title">SENORA</span>
+          <span class="brand-sub">MODEST ATELIER</span>
+        </a>
+      </div>
+
+      <!-- Right: Utility Actions -->
+      <div class="header-actions">
+        
+        <!-- Search Button -->
+        <button class="action-btn" id="searchToggleBtn" type="button" aria-label="Search catalog" title="Search" aria-haspopup="dialog" aria-expanded="false" aria-controls="searchModal">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="11" cy="11" r="8"></circle>
+            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+          </svg>
+        </button>
+
+        <!-- Account Button -->
+        <button class="action-btn" id="accountBtn" type="button" aria-label="Sign in or create an account" title="Account" aria-haspopup="dialog" data-account-btn>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+            <circle cx="12" cy="7" r="4"></circle>
+          </svg>
+          <span class="acct-initial" hidden></span>
+        </button>
+
+        <!-- Wishlist Button -->
+        <button class="action-btn" id="wishlistHeaderBtn" type="button" aria-label="View saved wishlist" title="Wishlist" aria-haspopup="dialog" aria-expanded="false" aria-controls="wishlistDrawer">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+          </svg>
+          <span class="badge-count" id="wishlistCountBadge" style="display: none;">0</span>
+        </button>
+
+        <!-- Shopping Bag / Cart Drawer Button -->
+        <button class="action-btn" id="cartToggleBtn" type="button" aria-label="Open shopping bag" title="Shopping Bag" aria-haspopup="dialog" aria-expanded="false" aria-controls="cartDrawer">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <path d="M16 10a4 4 0 0 1-8 0"></path>
+          </svg>
+          <span class="badge-count" id="cartCountBadge">0</span>
+        </button>
+
+      </div>
+
+    </div>
+  </header>
+
+  <!-- Main Content Landmark -->
+  <main id="mainContent">
+
+    <!-- Hero -->
+    <section class="shop-hero coll-hero" aria-labelledby="collectionsHeading">
+      <div class="shop-hero-bg" aria-hidden="true">
+        <img src="https://images.unsplash.com/photo-1509631179647-0177331693ae?auto=format&fit=crop&w=2000&q=85" alt="" loading="eager" onerror="handleImageError(this)">
+      </div>
+      <div class="shop-hero-veil" aria-hidden="true"></div>
+
+      <nav class="shop-breadcrumb" aria-label="Breadcrumb">
+        <a href="index.html">Home</a>
+        <span class="separator">/</span>
+        <span class="current">The Collections</span>
+      </nav>
+
+      <div class="shop-hero-seal" aria-hidden="true">
+        <div><strong>Four</strong><span>Capsules</span></div>
+      </div>
+
+      <div class="shop-hero-body">
+        <span class="shop-hero-kicker reveal-fade stagger-1">Autumn 2026 / 27</span>
+        <h1 class="shop-hero-title reveal-fade stagger-2" id="collectionsHeading">
+          <span>The</span>
+          <span class="is-italic">Collections</span>
+        </h1>
+        <p class="shop-hero-lede reveal-fade stagger-3">
+          Four chapters, one idea: that modesty can be the most architectural thing you wear.
+        </p>
+      </div>
+
+      <div class="shop-hero-foot reveal-fade stagger-4">
+        <dl class="shop-hero-specs">
+          <div><dt>Capsules</dt><dd>Four</dd></div>
+          <div><dt>Silhouettes</dt><dd>Eight Pieces</dd></div>
+          <div><dt>Atelier</dt><dd>Lahore, Pakistan</dd></div>
+        </dl>
+        <a href="#nocturne" class="shop-hero-scroll" aria-label="Begin with the first collection">
+          <span>Begin The Story</span>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M12 5v14M5 12l7 7 7-7"/></svg>
+        </a>
+      </div>
+    </section>
+
+    <!-- Side index -->
+    <nav class="coll-index" aria-label="Collections index">
+      <a href="#nocturne" data-coll-link="nocturne"><span>The Nocturne Edit</span></a>
+      <a href="#sandstillness" data-coll-link="sandstillness"><span>Sand &amp; Stillness</span></a>
+      <a href="#alabaster" data-coll-link="alabaster"><span>The Alabaster Series</span></a>
+      <a href="#cashmere" data-coll-link="cashmere"><span>Winter Cashmere</span></a>
+    </nav>
+
+    <!-- Intro -->
+    <section class="shop-intro" aria-label="About the collections">
+      <div class="container">
+        <div class="shop-intro-grid">
+          <h2 class="shop-intro-statement reveal-fade stagger-1">
+            We do not design for seasons. We design <em>chapters,</em> each one a mood you can live inside.
+          </h2>
+          <div class="shop-intro-side reveal-fade stagger-2">
+            <p>Every capsule begins with a single fabric and a single feeling. The pieces that follow are cut to belong together, yet each one stands alone. Look closely at the photographs: the dots open the garments you see.</p>
+            <div class="shop-signature">The SENORA Atelier<small>Lahore, Pakistan</small></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="coll-block is-dark" id="nocturne" data-coll aria-labelledby="nocturneTitle">
+      <div class="container">
+        <div class="coll-grid">
+          <div class="coll-visual reveal-fade stagger-1">
+            <figure class="coll-photo">
+              <img src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&w=1200&q=85" alt="Model in a sculptural black silk abaya" loading="lazy" onerror="handleImageError(this)">
+            <div class="look-spot" style="--x:46%;--y:34%" data-flip="right">
+              <button type="button" class="look-dot" aria-label="Shop the look: Nocturne Raw Silk Abaya" aria-expanded="false"></button>
+              <div class="look-tip" data-look-product="sn-01" role="group"></div>
+            </div>
+            <div class="look-spot" style="--x:56%;--y:72%" data-flip="left">
+              <button type="button" class="look-dot" aria-label="Shop the look: Mirage Batwing Crepe Abaya" aria-expanded="false"></button>
+              <div class="look-tip" data-look-product="sn-05" role="group"></div>
+            </div>
+            </figure>
+            <span class="coll-hint">Tap the dots to shop the look</span>
+          </div>
+          <div class="coll-copy reveal-fade stagger-2">
+            <span class="coll-kicker">Abayas</span>
+            <h2 class="coll-title" id="nocturneTitle">The Nocturne <em>Edit</em></h2>
+            <p class="coll-text">Cut from heavyweight raw silk crepe that holds its line from morning to midnight. Tailored shoulders, concealed magnetic closures and deep in-seam pockets, drawn in the colour of the hour after dusk.</p>
+            <dl class="coll-facts"><div><dt>Fabric</dt><dd>Raw Silk Crepe</dd></div><div><dt>Pieces</dt><dd>Two</dd></div><div><dt>From</dt><dd>PKR 26,000</dd></div></dl>
+            <a href="shop.html#abayas" class="coll-cta">Shop The Nocturne Edit</a>
+          </div>
+        </div>
+        <div class="coll-products" data-collection-products="sn-01,sn-05"></div>
+      </div>
+    </section>
+
+    <section class="coll-block is-sand is-reversed" id="sandstillness" data-coll aria-labelledby="sandstillnessTitle">
+      <div class="container">
+        <div class="coll-grid">
+          <div class="coll-visual reveal-fade stagger-1">
+            <figure class="coll-photo">
+              <img src="https://images.unsplash.com/photo-1490481651871-ab68de25d43d?auto=format&fit=crop&w=1200&q=85" alt="Model in a sand coloured crepe co-ord" loading="lazy" onerror="handleImageError(this)">
+            <div class="look-spot" style="--x:48%;--y:30%" data-flip="right">
+              <button type="button" class="look-dot" aria-label="Shop the look: Draped Sand Crepe Co-ord" aria-expanded="false"></button>
+              <div class="look-tip" data-look-product="sn-02" role="group"></div>
+            </div>
+            <div class="look-spot" style="--x:52%;--y:68%" data-flip="right">
+              <button type="button" class="look-dot" aria-label="Shop the look: Monolith Raw Linen Co-ord" aria-expanded="false"></button>
+              <div class="look-tip" data-look-product="sn-06" role="group"></div>
+            </div>
+            </figure>
+            <span class="coll-hint">Tap the dots to shop the look</span>
+          </div>
+          <div class="coll-copy reveal-fade stagger-2">
+            <span class="coll-kicker">Co-ords</span>
+            <h2 class="coll-title" id="sandstillnessTitle">Sand &amp; <em>Stillness</em></h2>
+            <p class="coll-text">Separates designed to be worn together or apart. Draped crepe and raw Belgian linen in the tones of dry earth, softened at the hem and finished entirely by hand.</p>
+            <dl class="coll-facts"><div><dt>Fabric</dt><dd>Crepe &amp; Linen</dd></div><div><dt>Pieces</dt><dd>Two</dd></div><div><dt>From</dt><dd>PKR 22,000</dd></div></dl>
+            <a href="shop.html#coords" class="coll-cta">Shop Sand &amp; Stillness</a>
+          </div>
+        </div>
+        <div class="coll-products" data-collection-products="sn-02,sn-06"></div>
+      </div>
+    </section>
+
+    <section class="coll-block is-light" id="alabaster" data-coll aria-labelledby="alabasterTitle">
+      <div class="container">
+        <div class="coll-grid">
+          <div class="coll-visual reveal-fade stagger-1">
+            <figure class="coll-photo">
+              <img src="https://images.unsplash.com/photo-1539109136881-3be0616acf4b?auto=format&fit=crop&w=1200&q=85" alt="Model in an ivory pleated column dress" loading="lazy" onerror="handleImageError(this)">
+            <div class="look-spot" style="--x:50%;--y:28%" data-flip="right">
+              <button type="button" class="look-dot" aria-label="Shop the look: Pleated Atelier Column Dress" aria-expanded="false"></button>
+              <div class="look-tip" data-look-product="sn-03" role="group"></div>
+            </div>
+            <div class="look-spot" style="--x:46%;--y:74%" data-flip="right">
+              <button type="button" class="look-dot" aria-label="Shop the look: Sovereign Tiered Silk Gown" aria-expanded="false"></button>
+              <div class="look-tip" data-look-product="sn-07" role="group"></div>
+            </div>
+            </figure>
+            <span class="coll-hint">Tap the dots to shop the look</span>
+          </div>
+          <div class="coll-copy reveal-fade stagger-2">
+            <span class="coll-kicker">Dresses</span>
+            <h2 class="coll-title" id="alabasterTitle">The Alabaster <em>Series</em></h2>
+            <p class="coll-text">A serene study in tone-on-tone ivory. Hand-pleated columns and tiered silk habotai that move a half-second after you do, made for moments that ask for quiet distinction.</p>
+            <dl class="coll-facts"><div><dt>Fabric</dt><dd>Silk Habotai</dd></div><div><dt>Pieces</dt><dd>Two</dd></div><div><dt>From</dt><dd>PKR 34,500</dd></div></dl>
+            <a href="shop.html#dresses" class="coll-cta">Shop The Alabaster Series</a>
+          </div>
+        </div>
+        <div class="coll-products" data-collection-products="sn-03,sn-07"></div>
+      </div>
+    </section>
+
+    <section class="coll-block is-dark is-reversed" id="cashmere" data-coll aria-labelledby="cashmereTitle">
+      <div class="container">
+        <div class="coll-grid">
+          <div class="coll-visual reveal-fade stagger-1">
+            <figure class="coll-photo">
+              <img src="https://images.unsplash.com/photo-1544441893-675973e31985?auto=format&fit=crop&w=1200&q=85" alt="Model in a structured wool trench cape" loading="lazy" onerror="handleImageError(this)">
+            <div class="look-spot" style="--x:50%;--y:32%" data-flip="right">
+              <button type="button" class="look-dot" aria-label="Shop the look: Structured Wool-Blend Trench Cape" aria-expanded="false"></button>
+              <div class="look-tip" data-look-product="sn-04" role="group"></div>
+            </div>
+            <div class="look-spot" style="--x:54%;--y:70%" data-flip="right">
+              <button type="button" class="look-dot" aria-label="Shop the look: Kashmir Double-Faced Cocoon Coat" aria-expanded="false"></button>
+              <div class="look-tip" data-look-product="sn-08" role="group"></div>
+            </div>
+            </figure>
+            <span class="coll-hint">Tap the dots to shop the look</span>
+          </div>
+          <div class="coll-copy reveal-fade stagger-2">
+            <span class="coll-kicker">Outerwear</span>
+            <h2 class="coll-title" id="cashmereTitle">Winter <em>Cashmere</em></h2>
+            <p class="coll-text">Double-faced wool and cashmere, joined by hand with no lining and no visible seam allowance. Warm enough for a Lahore December, quiet enough for every evening after.</p>
+            <dl class="coll-facts"><div><dt>Fabric</dt><dd>Cashmere &amp; Wool</dd></div><div><dt>Pieces</dt><dd>Two</dd></div><div><dt>From</dt><dd>PKR 39,000</dd></div></dl>
+            <a href="shop.html#outerwear" class="coll-cta">Shop Winter Cashmere</a>
+          </div>
+        </div>
+        <div class="coll-products" data-collection-products="sn-04,sn-08"></div>
+      </div>
+    </section>
+
+    <!-- Fabric Guide -->
+    <section class="coll-fabrics" aria-labelledby="fabricsHeading">
+      <div class="container">
+        <header class="coll-fabrics-head">
+          <h2 id="fabricsHeading">The <em>fabric</em> library</h2>
+          <p>Four materials carry every collection. Here is how each one feels, behaves and should be cared for.</p>
+        </header>
+        <div class="coll-fabric-grid">
+          <article class="coll-fabric reveal-fade stagger-1">
+            <span class="swatch-chip" style="--chip:#1b1b1a"></span>
+            <h3>Mulberry Silk</h3>
+            <dl>
+              <div><dt>Feels</dt><dd>Cool, fluid, with a soft sheen</dd></div>
+              <div><dt>Wear</dt><dd>Evenings, occasions, all year</dd></div>
+              <div><dt>Care</dt><dd>Dry clean, or hand wash cold</dd></div>
+            </dl>
+          </article>
+          <article class="coll-fabric reveal-fade stagger-2">
+            <span class="swatch-chip" style="--chip:#cdbfa6"></span>
+            <h3>Belgian Linen</h3>
+            <dl>
+              <div><dt>Feels</dt><dd>Airy, textured, softer with each wear</dd></div>
+              <div><dt>Wear</dt><dd>Warm days and long travel</dd></div>
+              <div><dt>Care</dt><dd>Machine wash gentle, steam to finish</dd></div>
+            </dl>
+          </article>
+          <article class="coll-fabric reveal-fade stagger-3">
+            <span class="swatch-chip" style="--chip:#e8e1d3"></span>
+            <h3>Virgin Wool</h3>
+            <dl>
+              <div><dt>Feels</dt><dd>Substantial, with a clean, heavy drape</dd></div>
+              <div><dt>Wear</dt><dd>Cool mornings, structured layers</dd></div>
+              <div><dt>Care</dt><dd>Dry clean, air between wears</dd></div>
+            </dl>
+          </article>
+          <article class="coll-fabric reveal-fade stagger-4">
+            <span class="swatch-chip" style="--chip:#8b7355"></span>
+            <h3>Cashmere</h3>
+            <dl>
+              <div><dt>Feels</dt><dd>Weightless warmth, impossibly soft</dd></div>
+              <div><dt>Wear</dt><dd>Winter, and every cold evening</dd></div>
+              <div><dt>Care</dt><dd>Dry clean, store folded in cotton</dd></div>
+            </dl>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Archive -->
+    <section class="coll-archive" aria-labelledby="archiveHeading">
+      <div class="container">
+        <header class="coll-archive-head">
+          <h2 id="archiveHeading">From the <em>archive</em></h2>
+          <p>Chapters that have closed. Their silhouettes still inform everything we cut today.</p>
+        </header>
+      </div>
+      <div class="coll-archive-rail" tabindex="0" aria-label="Past collections, scroll horizontally">
+        <figure><img src="https://images.unsplash.com/photo-1558769132-cb1aea458c5e?auto=format&fit=crop&w=700&q=80" alt="Archive study in natural textiles" loading="lazy" onerror="handleImageError(this)"><figcaption><strong>Autumn 2025</strong><span>The Ivory Study</span></figcaption></figure>
+        <figure><img src="https://images.unsplash.com/photo-1584917865442-de89df76afd3?auto=format&fit=crop&w=700&q=80" alt="Archive detail of hand-finished textile" loading="lazy" onerror="handleImageError(this)"><figcaption><strong>Winter 2025</strong><span>Stone &amp; Wool</span></figcaption></figure>
+        <figure><img src="https://images.unsplash.com/photo-1485230895905-ec40ba36b9bc?auto=format&fit=crop&w=700&q=80" alt="Archive linen separates" loading="lazy" onerror="handleImageError(this)"><figcaption><strong>Spring 2026</strong><span>Linen Season</span></figcaption></figure>
+        <figure><img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=700&q=80" alt="Archive evening silk" loading="lazy" onerror="handleImageError(this)"><figcaption><strong>Eid 2026</strong><span>The Silk Hour</span></figcaption></figure>
+        <figure><img src="https://images.unsplash.com/photo-1512436991641-6745cdb1723f?auto=format&fit=crop&w=700&q=80" alt="Archive outerwear" loading="lazy" onerror="handleImageError(this)"><figcaption><strong>Winter 2024</strong><span>First Capsule</span></figcaption></figure>
+      </div>
+    </section>
+
+    <!-- Upcoming Drop -->
+    <section class="coll-drop" id="newsletterSection" aria-labelledby="dropHeading">
+      <div class="container">
+        <div class="coll-drop-inner">
+          <span class="home-kicker">Coming Soon</span>
+          <h2 id="dropHeading">Spring 2027, <em>unfolding</em></h2>
+          <p>Lighter silks, softer sands and a new silhouette we have been quietly perfecting. Be the first to see it, a full week before it opens.</p>
+          <form class="coll-drop-form" id="newsletterForm" novalidate>
+            <label for="newsletterEmail" class="sr-only">Email address</label>
+            <input type="email" id="newsletterEmail" placeholder="Your email address" required autocomplete="email">
+            <button type="submit" id="newsletterSubmitBtn" class="shop-btn-gold">Notify Me</button>
+          </form>
+          <div class="newsletter-feedback" id="newsletterFeedback" role="status" aria-live="polite"></div>
+          <p class="coll-drop-note">Demo preview: no email is stored or transmitted.</p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- 10. Polished Editorial Footer (Exact Match with Homepage) -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      
+      <div class="footer-top">
+        
+        <!-- Brand Information -->
+        <div class="footer-brand">
+          <span class="footer-logo">SENORA</span>
+          <p class="footer-tagline">
+            An independent modest luxury fashion house dedicated to architectural silhouettes, pure textiles, and quiet distinction.
+          </p>
+          <div class="footer-atelier-badge">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/></svg>
+            <span>Lahore • Karachi • Islamabad</span>
+          </div>
+        </div>
+
+        <!-- Column 1: Collections -->
+        <div class="footer-col">
+          <h6>Collections</h6>
+          <ul class="footer-links">
+            <li><a href="shop.html">The Complete Archive</a></li>
+            <li><a href="shop.html#abayas">Signature Abayas</a></li>
+            <li><a href="shop.html#coords">Tailored Co-ords</a></li>
+            <li><a href="shop.html#dresses">Column Dresses</a></li>
+            <li><a href="shop.html#outerwear">Outerwear & Capes</a></li>
+            <li><a href="index.html#campaign">The Alabaster Series</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 2: Client Care -->
+        <div class="footer-col">
+          <h6>Client Services</h6>
+          <ul class="footer-links">
+            <li><a href="size-guide.html#bespoke">Bespoke Fitting Services</a></li>
+            <li><a href="shipping.html#delivery">Complimentary Delivery Guide</a></li>
+            <li><a href="care.html">Care & Silk Preservation</a></li>
+            <li><a href="shipping.html#returns">Exchange Policy</a></li>
+            <li><a href="concierge.html#appointment">Private Salon Appointments</a></li>
+            <li><a href="concierge.html">Contact Atelier Concierge</a></li>
+            <li><a href="account.html">My Account</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 3: Atelier Ethics -->
+        <div class="footer-col">
+          <h6>Atelier & Ethics</h6>
+          <ul class="footer-links">
+            <li><a href="story.html#manifesto">Our Manifesto</a></li>
+            <li><a href="story.html#artisans">Artisan Transparency</a></li>
+            <li><a href="story.html#materials">Natural Fiber Commitments</a></li>
+            <li><a href="story.html#materials">Zero-Waste Pattern Cutting</a></li>
+            <li><a href="concierge.html#contact">Careers at SENORA</a></li>
+          </ul>
+        </div>
+
+      </div>
+
+      <!-- Payment & Security Strip -->
+      <div class="footer-payment-strip">
+        <div class="payment-methods">
+          <span>Accepted in Pakistan:</span>
+          <span class="payment-tag">Cash on Delivery (COD)</span>
+          <span class="payment-tag">Direct Bank Transfer</span>
+          <span class="payment-tag">Visa / Mastercard</span>
+          <span class="payment-tag">UnionPay</span>
+        </div>
+        <div class="footer-region">
+          <span>Region: Pakistan (PKR ₨)</span>
+        </div>
+      </div>
+
+      <!-- Copyright Bottom Bar -->
+      <div class="footer-bottom">
+        <p>&copy; 2026 SENORA Modest Fashion Atelier. All rights reserved. Demo Experience.</p>
+        <div style="display: flex; gap: 1.5rem;">
+          <a href="privacy.html">Privacy Policy</a>
+          <a href="terms.html">Terms of Service</a>
+          <a href="accessibility.html">Accessibility Statement</a>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- =========================================================================
+       Global Interactive Overlays (Shared across SENORA)
+       ========================================================================= -->
+
+  <!-- Shopping Bag / Cart Drawer -->
+  <div class="cart-drawer-overlay" id="cartDrawerOverlay" aria-hidden="true"></div>
+  <aside 
+    class="cart-drawer" 
+    id="cartDrawer" 
+    role="dialog" 
+    aria-modal="true" 
+    aria-labelledby="cartDrawerTitle" 
+    aria-hidden="true"
+  >
+    <div class="cart-header">
+      <h3 id="cartDrawerTitle">Shopping Bag</h3>
+      <button class="drawer-close-btn" id="cartCloseBtn" type="button" aria-label="Close shopping bag drawer">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <line x1="18" y1="6" x2="6" y2="18"></line>
+          <line x1="6" y1="6" x2="18" y2="18"></line>
+        </svg>
+      </button>
+    </div>
+
+    <!-- Free Shipping Progress Meter -->
+    <div class="shipping-meter-box">
+      <p class="shipping-meter-text" id="shippingMeterText">
+        Add <strong>PKR 25,000</strong> to qualify for complimentary delivery.
+      </p>
+      <div class="shipping-progress-bar" role="progressbar" aria-label="Progress towards free delivery">
+        <div class="shipping-progress-fill" id="shippingProgressBar" style="width: 0%;"></div>
+      </div>
+    </div>
+
+    <!-- Scrollable Item List -->
+    <div class="cart-items-container" id="cartItemsContainer">
+      <!-- Populated via JavaScript -->
+    </div>
+
+    <!-- Cart Footer & Checkout Action -->
+    <div class="cart-footer">
+      <div class="cart-subtotal-row">
+        <span>Estimated Subtotal</span>
+        <strong id="cartSubtotalAmount">PKR 0</strong>
+      </div>
+      <p class="cart-note">Taxes calculated at checkout. Complimentary alterations included.</p>
+      <button class="btn btn-primary cart-checkout-btn" id="cartCheckoutBtn" type="button">
+        Proceed to Checkout
+      </button>
+      <span class="cart-demo-badge">Demo Mode: No payment is processed</span>
+    </div>
+  </aside>
+
+  <!-- Interactive Wishlist Drawer -->
+  <div class="cart-drawer-overlay" id="wishlistDrawerOverlay" aria-hidden="true"></div>
+  <aside 
+    class="cart-drawer" 
+    id="wishlistDrawer" 
+    role="dialog" 
+    aria-modal="true" 
+    aria-labelledby="wishlistDrawerTitle" 
+    aria-hidden="true"
+  >
+    <div class="cart-header">
+      <h3 id="wishlistDrawerTitle">Saved Pieces</h3>
+      <button class="drawer-close-btn" id="wishlistCloseBtn" type="button" aria-label="Close saved pieces drawer">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <line x1="18" y1="6" x2="6" y2="18"></line>
+          <line x1="6" y1="6" x2="18" y2="18"></line>
+        </svg>
+      </button>
+    </div>
+
+    <div class="shipping-meter-box" style="background-color: var(--color-white); border-bottom: var(--border-hairline);">
+      <p class="shipping-meter-text" style="color: var(--color-stone-muted); margin-bottom: 0;">
+        Pieces saved for your private curation.
+      </p>
+    </div>
+
+    <!-- Scrollable Wishlist Items Container -->
+    <div class="cart-items-container" id="wishlistItemsContainer">
+      <!-- Populated via JavaScript -->
+    </div>
+
+    <!-- Wishlist Footer -->
+    <div class="cart-footer">
+      <button class="btn btn-primary" style="width: 100%;" id="wishlistExploreBtn" type="button">
+        Explore The Edit
+      </button>
+      <span class="cart-demo-badge">In-Memory Session Wishlist</span>
+    </div>
+  </aside>
+
+  <!-- Search Overlay Modal -->
+  <div 
+    class="search-modal" 
+    id="searchModal" 
+    role="dialog" 
+    aria-modal="true" 
+    aria-labelledby="searchModalTitle" 
+    aria-hidden="true"
+  >
+    <div class="search-container">
+      <button class="search-close-btn" id="searchCloseBtn" type="button" aria-label="Close search overlay">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <line x1="18" y1="6" x2="6" y2="18"></line>
+          <line x1="6" y1="6" x2="18" y2="18"></line>
+        </svg>
+      </button>
+
+      <h3 class="search-title" id="searchModalTitle">Search Atelier Collection</h3>
+
+      <div class="search-input-wrapper">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <circle cx="11" cy="11" r="8"></circle>
+          <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+        </svg>
+        <input 
+          type="search" 
+          id="searchInput" 
+          class="search-input" 
+          placeholder="Search abayas, co-ords, dresses, outerwear..." 
+          autocomplete="off"
+        >
+      </div>
+
+      <!-- Quick Search Suggestions -->
+      <div class="search-popular-tags">
+        <span style="color: var(--color-stone); font-size: 0.75rem;">Suggestions:</span>
+        <button type="button" class="search-tag">Silk Abaya</button>
+        <button type="button" class="search-tag">Sand Co-ord</button>
+        <button type="button" class="search-tag">Column Dress</button>
+        <button type="button" class="search-tag">Trench Cape</button>
+      </div>
+
+      <!-- Results Container -->
+      <div class="search-results-list" id="searchResultsList" role="region" aria-live="polite">
+        <!-- Live search matches injected via JavaScript -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Premium Product Detail Modal -->
+  <div class="product-modal-backdrop" id="productModalBackdrop" aria-hidden="true"></div>
+  <div 
+    class="product-modal" 
+    id="productModal" 
+    role="dialog" 
+    aria-modal="true" 
+    aria-labelledby="modalProductTitle" 
+    aria-hidden="true"
+  >
+    <div class="product-modal-container">
+      <button class="product-modal-close" id="productModalClose" type="button" aria-label="Close product details">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <line x1="18" y1="6" x2="6" y2="18"></line>
+          <line x1="6" y1="6" x2="18" y2="18"></line>
+        </svg>
+      </button>
+
+      <div class="product-modal-body" id="productModalBody">
+        <!-- Populated via JavaScript -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Mobile Navigation Drawer & Dedicated Backdrop -->
+  <div class="mobile-nav-overlay" id="mobileNavOverlay" aria-hidden="true"></div>
+  <aside 
+    class="mobile-nav-drawer" 
+    id="mobileNavDrawer" 
+    role="dialog" 
+    aria-modal="true" 
+    aria-label="Mobile Navigation"
+  >
+    <div class="mobile-nav-header">
+      <span class="brand-title" style="font-size: 1.5rem;">SENORA</span>
+      <button id="mobileNavClose" type="button" aria-label="Close navigation" style="padding: 0.5rem;">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <line x1="18" y1="6" x2="6" y2="18"></line>
+          <line x1="6" y1="6" x2="18" y2="18"></line>
+        </svg>
+      </button>
+    </div>
+
+    <nav class="mobile-nav-links">
+      <a href="index.html" data-nav="home">Home</a>
+      <a href="shop.html" data-nav="shop">Shop</a>
+      <a href="collections.html" class="is-active" data-nav="collections">Collections</a>
+      <a href="lookbook.html" data-nav="lookbook">Lookbook</a>
+      <a href="story.html" data-nav="story">Our Story</a>
+      <a href="account.html" data-account-open="auto" data-account-label>Sign In / Create Account</a>
+    </nav>
+
+    <div class="mobile-nav-footer">
+      <div style="font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.1em; color: var(--color-stone);">
+        Currency: Pakistan (PKR)
+      </div>
+      <p style="font-size: 0.8125rem; color: var(--color-stone-muted); line-height: 1.5;">
+        Complimentary delivery across Pakistan on orders over PKR 25,000.
+      </p>
+    </div>
+  </aside>
+
+  <!-- Toast Notification Hub -->
+  <div class="toast-container" id="toastContainer" aria-live="polite"></div>
+
+  <!-- Shared Application Logic -->
+  <script src="js/main.js"></script>
+  <script src="js/account.js"></script>
+</body>
+</html>

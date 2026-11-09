@@ -1,0 +1,801 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Lookbook | SENORA — Luxury Modest Fashion</title>
+  
+  <meta name="description" content="The SENORA Autumn 2026 lookbook: four chapters of modest luxury, from morning light to evening drape. Shop every look.">
+  <meta name="keywords" content="modest fashion, luxury abayas, co-ords, modest dresses, atelier outerwear, Pakistani designer, raw silk, quiet luxury">
+  <meta name="theme-color" content="#111111">
+  
+  <!-- Typography Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="page-lookbook">
+
+  <!-- Accessible Skip to Content -->
+  <a href="#mainContent" class="skip-link">Skip to lookbook content</a>
+
+  <!-- 1. Editorial Announcement Bar -->
+  <aside class="announcement-bar" role="region" aria-label="Atelier Updates">
+    <div class="announcement-container">
+      <div class="announcement-meta">THE AUTUMN EDIT</div>
+      <div class="announcement-text">
+        Complimentary express delivery across Pakistan on orders over <strong>PKR 25,000</strong>
+      </div>
+      <div class="announcement-controls">
+        <span class="currency-badge">PKR ₨</span>
+        <a href="concierge.html" class="announcement-service">Atelier Service</a>
+      </div>
+    </div>
+  </aside>
+
+  <!-- 2. Sticky Master Navigation Header -->
+  <header class="site-header" role="banner" id="siteHeader">
+    <div class="header-container">
+      
+      <!-- Left: Primary Navigation -->
+      <nav class="nav-primary" aria-label="Primary Navigation">
+        <a href="index.html" class="nav-link" data-nav="home">Home</a>
+        <a href="shop.html" class="nav-link" data-nav="shop">Shop</a>
+        <a href="collections.html" class="nav-link" data-nav="collections">Collections</a>
+        <a href="lookbook.html" class="nav-link is-active" data-nav="lookbook">Lookbook</a>
+        <a href="story.html" class="nav-link" data-nav="story">Our Story</a>
+      </nav>
+
+      <!-- Mobile Hamburger Toggle -->
+      <button class="nav-toggle" id="mobileNavToggle" type="button" aria-label="Open mobile navigation menu" aria-expanded="false" aria-controls="mobileNavDrawer">
+        <span></span>
+        <span></span>
+      </button>
+
+      <!-- Center: Brand Wordmark -->
+      <div class="brand-mark">
+        <a href="index.html" aria-label="SENORA Home">
+          <span class="brand-title">SENORA</span>
+          <span class="brand-sub">MODEST ATELIER</span>
+        </a>
+      </div>
+
+      <!-- Right: Utility Actions -->
+      <div class="header-actions">
+        
+        <!-- Search Button -->
+        <button class="action-btn" id="searchToggleBtn" type="button" aria-label="Search catalog" title="Search" aria-haspopup="dialog" aria-expanded="false" aria-controls="searchModal">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="11" cy="11" r="8"></circle>
+            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+          </svg>
+        </button>
+
+        <!-- Account Button -->
+        <button class="action-btn" id="accountBtn" type="button" aria-label="Sign in or create an account" title="Account" aria-haspopup="dialog" data-account-btn>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+            <circle cx="12" cy="7" r="4"></circle>
+          </svg>
+          <span class="acct-initial" hidden></span>
+        </button>
+
+        <!-- Wishlist Button -->
+        <button class="action-btn" id="wishlistHeaderBtn" type="button" aria-label="View saved wishlist" title="Wishlist" aria-haspopup="dialog" aria-expanded="false" aria-controls="wishlistDrawer">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+          </svg>
+          <span class="badge-count" id="wishlistCountBadge" style="display: none;">0</span>
+        </button>
+
+        <!-- Shopping Bag / Cart Drawer Button -->
+        <button class="action-btn" id="cartToggleBtn" type="button" aria-label="Open shopping bag" title="Shopping Bag" aria-haspopup="dialog" aria-expanded="false" aria-controls="cartDrawer">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <path d="M16 10a4 4 0 0 1-8 0"></path>
+          </svg>
+          <span class="badge-count" id="cartCountBadge">0</span>
+        </button>
+
+      </div>
+
+    </div>
+  </header>
+
+  <!-- Main Content Landmark -->
+  <main id="mainContent">
+
+    <!-- Opening -->
+    <section class="shop-hero lb-hero" aria-labelledby="lookbookHeading">
+      <div class="shop-hero-bg" aria-hidden="true">
+        <img src="https://images.unsplash.com/photo-1539109136881-3be0616acf4b?auto=format&fit=crop&w=2000&q=85" alt="" loading="eager" onerror="handleImageError(this)">
+      </div>
+      <div class="shop-hero-veil" aria-hidden="true"></div>
+      <nav class="shop-breadcrumb" aria-label="Breadcrumb">
+        <a href="index.html">Home</a><span class="separator">/</span><span class="current">The Lookbook</span>
+      </nav>
+      <div class="shop-hero-seal" aria-hidden="true"><div><strong>Vol. I</strong><span>Autumn 2026</span></div></div>
+      <div class="shop-hero-body">
+        <span class="shop-hero-kicker reveal-fade stagger-1">Autumn Edit, Volume One</span>
+        <h1 class="shop-hero-title reveal-fade stagger-2" id="lookbookHeading"><span>The</span><span class="is-italic">Lookbook</span></h1>
+        <p class="shop-hero-lede reveal-fade stagger-3">One day, dressed in four chapters. From the first light to the last quiet hour.</p>
+      </div>
+      <div class="shop-hero-foot reveal-fade stagger-4">
+        <dl class="shop-hero-specs">
+          <div><dt>Chapters</dt><dd>Four</dd></div>
+          <div><dt>Looks</dt><dd>Eight Pieces</dd></div>
+          <div><dt>Shot In</dt><dd>Lahore</dd></div>
+        </dl>
+        <a href="#morning" class="shop-hero-scroll" aria-label="Begin chapter one"><span>Chapter I: Morning</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M12 5v14M5 12l7 7 7-7"/></svg></a>
+      </div>
+    </section>
+
+    <!-- Chapter index -->
+    <nav class="coll-index" aria-label="Lookbook chapters">
+      <a href="#morning" data-coll-link="morning"><span>I. Morning Light</span></a>
+      <a href="#gallery" data-coll-link="gallery"><span>II. The Gallery Hour</span></a>
+      <a href="#evening" data-coll-link="evening"><span>III. Evening Drape</span></a>
+      <a href="#stillness" data-coll-link="stillness"><span>IV. Stillness</span></a>
+    </nav>
+
+    <!-- Intro -->
+    <section class="shop-intro" aria-label="About the lookbook">
+      <div class="container">
+        <div class="shop-intro-grid">
+          <h2 class="shop-intro-statement reveal-fade stagger-1">A lookbook is not a catalogue. It is the day, <em>dressed.</em></h2>
+          <div class="shop-intro-side reveal-fade stagger-2">
+            <p>Scroll slowly. Tap the dots to shop any garment you see, or open a photograph to view it full screen, with the stylist's note beside it.</p>
+            <div class="shop-signature">The SENORA Atelier<small>Lahore, Pakistan</small></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="lb-chapter is-light" id="morning" data-coll data-lb-group="chapters" aria-labelledby="morningTitle">
+      <div class="container">
+        <header class="lb-chapter-head reveal-fade stagger-1">
+          <span class="lb-numeral" aria-hidden="true">I</span>
+          <div>
+            <span class="coll-kicker">Chapter One</span>
+            <h2 class="lb-chapter-title" id="morningTitle">Morning <em>Light</em></h2>
+          </div>
+          <blockquote class="lb-quote">The first hour belongs to you, before the day has asked for anything.</blockquote>
+          <p class="lb-story">Sand crepe and raw linen in the soft gold of a Lahore sunrise. Separates that move easily from breakfast to the boardroom, and never look as though they tried.</p>
+        </header>
+        <div class="lb-layout lb-layout-a">
+
+        <figure class="lb-item lb-tall" data-lb data-lb-id="m1" data-lb-title="Draped Sand Co-ord" data-lb-sub="Morning Light" data-lb-product="sn-02" data-lb-note="Wear the co-ord as a set, then split it: the draped top over tailored trousers carries you from breakfast to the boardroom." data-occasion="">
+          <div class="lb-frame">
+            <img src="https://images.unsplash.com/photo-1490481651871-ab68de25d43d?auto=format&fit=crop&w=1200&q=85" alt="Model in a draped sand crepe co-ord at sunrise" loading="lazy" onerror="handleImageError(this)">
+            <figcaption class="lb-cap"><strong>Draped Sand Co-ord</strong><span>Morning Light</span></figcaption>
+            <button type="button" class="lb-expand" aria-label="View Draped Sand Co-ord full screen"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M4 9V4h5M20 9V4h-5M4 15v5h5M20 15v5h-5"/></svg></button>
+          </div>
+          <div class="look-spot" style="--x:48%;--y:32%" data-flip="right">
+            <button type="button" class="look-dot" aria-label="Shop the look: Draped Sand Crepe Co-ord" aria-expanded="false"></button>
+            <div class="look-tip" data-look-product="sn-02" role="group"></div>
+          </div>
+        </figure>
+          <div class="lb-stack">
+
+        <figure class="lb-item lb-sq" data-lb data-lb-id="m2" data-lb-title="Monolith Linen Co-ord" data-lb-sub="Morning Light" data-lb-product="sn-06" data-lb-note="Raw linen is meant to crease. Steam lightly and let it soften through the day." data-occasion="">
+          <div class="lb-frame">
+            <img src="https://images.unsplash.com/photo-1485230895905-ec40ba36b9bc?auto=format&fit=crop&w=1100&q=85" alt="Model in a raw linen co-ord" loading="lazy" onerror="handleImageError(this)">
+            <figcaption class="lb-cap"><strong>Monolith Linen Co-ord</strong><span>Morning Light</span></figcaption>
+            <button type="button" class="lb-expand" aria-label="View Monolith Linen Co-ord full screen"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M4 9V4h5M20 9V4h-5M4 15v5h5M20 15v5h-5"/></svg></button>
+          </div>
+          <div class="look-spot" style="--x:50%;--y:40%" data-flip="right">
+            <button type="button" class="look-dot" aria-label="Shop the look: Monolith Raw Linen Co-ord" aria-expanded="false"></button>
+            <div class="look-tip" data-look-product="sn-06" role="group"></div>
+          </div>
+        </figure>
+
+        <figure class="lb-item lb-wide" data-lb data-lb-id="m3" data-lb-title="Hem Detail" data-lb-sub="Finished by hand" data-lb-product="" data-lb-note="Every hem is turned and stitched by hand in our Lahore atelier. Look for the quiet, even line." data-occasion="">
+          <div class="lb-frame">
+            <img src="https://images.unsplash.com/photo-1584917865442-de89df76afd3?auto=format&fit=crop&w=1100&q=85" alt="Hand-finished hem detail in ivory textile" loading="lazy" onerror="handleImageError(this)">
+            <figcaption class="lb-cap"><strong>Hem Detail</strong><span>Finished by hand</span></figcaption>
+            <button type="button" class="lb-expand" aria-label="View Hem Detail full screen"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M4 9V4h5M20 9V4h-5M4 15v5h5M20 15v5h-5"/></svg></button>
+          </div>
+        </figure>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="lb-chapter is-dark" id="gallery" data-coll data-lb-group="chapters" aria-labelledby="galleryTitle">
+      <div class="container">
+        <header class="lb-chapter-head reveal-fade stagger-1">
+          <span class="lb-numeral" aria-hidden="true">II</span>
+          <div>
+            <span class="coll-kicker">Chapter Two</span>
+            <h2 class="lb-chapter-title" id="galleryTitle">The Gallery <em>Hour</em></h2>
+          </div>
+          <blockquote class="lb-quote">Structure is a kind of silence. The best rooms are built from it.</blockquote>
+          <p class="lb-story">Wool cut like architecture and cashmere that falls in a single line. Pieces for the afternoon you spend among beautiful things and quiet people.</p>
+        </header>
+        <div class="lb-layout lb-layout-b">
+
+        <figure class="lb-item lb-tall" data-lb data-lb-id="g1" data-lb-title="Trench Cape" data-lb-sub="The Gallery Hour" data-lb-product="sn-04" data-lb-note="Belt the cape at the waist for shape, or leave it open and let the wool do the work." data-occasion="">
+          <div class="lb-frame">
+            <img src="https://images.unsplash.com/photo-1544441893-675973e31985?auto=format&fit=crop&w=1200&q=85" alt="Model in a structured wool trench cape" loading="lazy" onerror="handleImageError(this)">
+            <figcaption class="lb-cap"><strong>Trench Cape</strong><span>The Gallery Hour</span></figcaption>
+            <button type="button" class="lb-expand" aria-label="View Trench Cape full screen"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M4 9V4h5M20 9V4h-5M4 15v5h5M20 15v5h-5"/></svg></button>
+          </div>
+          <div class="look-spot" style="--x:50%;--y:30%" data-flip="right">
+            <button type="button" class="look-dot" aria-label="Shop the look: Structured Wool-Blend Trench Cape" aria-expanded="false"></button>
+            <div class="look-tip" data-look-product="sn-04" role="group"></div>
+          </div>
+        </figure>
+
+        <figure class="lb-item lb-tall lb-drop" data-lb data-lb-id="g2" data-lb-title="Cocoon Coat" data-lb-sub="The Gallery Hour" data-lb-product="sn-08" data-lb-note="Keep everything underneath tonal. The coat is the whole statement." data-occasion="">
+          <div class="lb-frame">
+            <img src="https://images.unsplash.com/photo-1512436991641-6745cdb1723f?auto=format&fit=crop&w=1200&q=85" alt="Model in a cashmere cocoon coat" loading="lazy" onerror="handleImageError(this)">
+            <figcaption class="lb-cap"><strong>Cocoon Coat</strong><span>The Gallery Hour</span></figcaption>
+            <button type="button" class="lb-expand" aria-label="View Cocoon Coat full screen"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M4 9V4h5M20 9V4h-5M4 15v5h5M20 15v5h-5"/></svg></button>
+          </div>
+          <div class="look-spot" style="--x:50%;--y:36%" data-flip="right">
+            <button type="button" class="look-dot" aria-label="Shop the look: Kashmir Double-Faced Cocoon Coat" aria-expanded="false"></button>
+            <div class="look-tip" data-look-product="sn-08" role="group"></div>
+          </div>
+        </figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="lb-chapter is-sand" id="evening" data-coll data-lb-group="chapters" aria-labelledby="eveningTitle">
+      <div class="container">
+        <header class="lb-chapter-head reveal-fade stagger-1">
+          <span class="lb-numeral" aria-hidden="true">III</span>
+          <div>
+            <span class="coll-kicker">Chapter Three</span>
+            <h2 class="lb-chapter-title" id="eveningTitle">Evening <em>Drape</em></h2>
+          </div>
+          <blockquote class="lb-quote">Silk does not announce itself. It arrives a moment after you do.</blockquote>
+          <p class="lb-story">Hand-pleated columns, tiered habotai and a raw silk abaya the colour of the hour after dusk. For dinners that run long and rooms that go quiet when you enter.</p>
+        </header>
+        <div class="lb-layout lb-layout-c">
+
+        <figure class="lb-item lb-tall lb-down-1" data-lb data-lb-id="e1" data-lb-title="Pleated Column Dress" data-lb-sub="Evening Drape" data-lb-product="sn-03" data-lb-note="Pleats hold their shape best when hung, never folded. Steam, do not iron." data-occasion="">
+          <div class="lb-frame">
+            <img src="https://images.unsplash.com/photo-1539109136881-3be0616acf4b?auto=format&fit=crop&w=1100&q=85" alt="Model in a pleated column dress" loading="lazy" onerror="handleImageError(this)">
+            <figcaption class="lb-cap"><strong>Pleated Column Dress</strong><span>Evening Drape</span></figcaption>
+            <button type="button" class="lb-expand" aria-label="View Pleated Column Dress full screen"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M4 9V4h5M20 9V4h-5M4 15v5h5M20 15v5h-5"/></svg></button>
+          </div>
+          <div class="look-spot" style="--x:50%;--y:30%" data-flip="right">
+            <button type="button" class="look-dot" aria-label="Shop the look: Pleated Atelier Column Dress" aria-expanded="false"></button>
+            <div class="look-tip" data-look-product="sn-03" role="group"></div>
+          </div>
+        </figure>
+
+        <figure class="lb-item lb-tall lb-up" data-lb data-lb-id="e2" data-lb-title="Nocturne Silk Abaya" data-lb-sub="Evening Drape" data-lb-product="sn-01" data-lb-note="Pair with a tonal silk scarf and a single piece of gold. Nothing more is needed." data-occasion="">
+          <div class="lb-frame">
+            <img src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&w=1200&q=85" alt="Model in a raw silk abaya" loading="lazy" onerror="handleImageError(this)">
+            <figcaption class="lb-cap"><strong>Nocturne Silk Abaya</strong><span>Evening Drape</span></figcaption>
+            <button type="button" class="lb-expand" aria-label="View Nocturne Silk Abaya full screen"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M4 9V4h5M20 9V4h-5M4 15v5h5M20 15v5h-5"/></svg></button>
+          </div>
+          <div class="look-spot" style="--x:48%;--y:34%" data-flip="right">
+            <button type="button" class="look-dot" aria-label="Shop the look: Nocturne Raw Silk Abaya" aria-expanded="false"></button>
+            <div class="look-tip" data-look-product="sn-01" role="group"></div>
+          </div>
+        </figure>
+
+        <figure class="lb-item lb-tall lb-down-2" data-lb data-lb-id="e3" data-lb-title="Sovereign Silk Gown" data-lb-sub="Evening Drape" data-lb-product="sn-07" data-lb-note="Tiers are cut on the bias, so the gown moves with a slight delay. Walk slowly." data-occasion="">
+          <div class="lb-frame">
+            <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=1100&q=85" alt="Model in a tiered silk gown" loading="lazy" onerror="handleImageError(this)">
+            <figcaption class="lb-cap"><strong>Sovereign Silk Gown</strong><span>Evening Drape</span></figcaption>
+            <button type="button" class="lb-expand" aria-label="View Sovereign Silk Gown full screen"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M4 9V4h5M20 9V4h-5M4 15v5h5M20 15v5h-5"/></svg></button>
+          </div>
+          <div class="look-spot" style="--x:50%;--y:32%" data-flip="right">
+            <button type="button" class="look-dot" aria-label="Shop the look: Sovereign Tiered Silk Gown" aria-expanded="false"></button>
+            <div class="look-tip" data-look-product="sn-07" role="group"></div>
+          </div>
+        </figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="lb-chapter lb-final is-dark" id="stillness" data-coll data-lb-group="chapters" aria-labelledby="stillnessTitle">
+      <div class="container">
+        <header class="lb-chapter-head reveal-fade stagger-1">
+          <span class="lb-numeral" aria-hidden="true">IV</span>
+          <div>
+            <span class="coll-kicker">Chapter Four</span>
+            <h2 class="lb-chapter-title" id="stillnessTitle"><em>Stillness</em></h2>
+          </div>
+        </header>
+
+        <figure class="lb-item lb-banner" data-lb data-lb-id="s1" data-lb-title="Mirage Batwing Abaya" data-lb-sub="Stillness" data-lb-product="sn-05" data-lb-note="The batwing sleeve rewards stillness. Hold a pose, let the georgette settle, then move." data-occasion="">
+          <div class="lb-frame">
+            <img src="https://images.unsplash.com/photo-1509631179647-0177331693ae?auto=format&fit=crop&w=1800&q=85" alt="Model in a batwing crepe abaya in quiet light" loading="lazy" onerror="handleImageError(this)">
+            <figcaption class="lb-cap"><strong>Mirage Batwing Abaya</strong><span>Stillness</span></figcaption>
+            <button type="button" class="lb-expand" aria-label="View Mirage Batwing Abaya full screen"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M4 9V4h5M20 9V4h-5M4 15v5h5M20 15v5h-5"/></svg></button>
+          </div>
+          <div class="look-spot" style="--x:46%;--y:40%" data-flip="right">
+            <button type="button" class="look-dot" aria-label="Shop the look: Mirage Batwing Crepe Abaya" aria-expanded="false"></button>
+            <div class="look-tip" data-look-product="sn-05" role="group"></div>
+          </div>
+        </figure>
+        <p class="lb-final-line reveal-fade stagger-2">Nothing added. Nothing missing.</p>
+      </div>
+    </section>
+
+    <!-- Film -->
+    <section class="lb-film" id="film" data-video-src="" aria-labelledby="filmHeading">
+      <div class="container">
+        <div class="lb-film-head">
+          <span class="home-kicker">The Campaign Film</span>
+          <h2 id="filmHeading">Watch the season <em>move</em></h2>
+        </div>
+        <div class="lb-film-stage" id="lbFilmStage">
+          <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&w=1800&q=85" alt="Poster frame from the SENORA campaign film" loading="lazy" onerror="handleImageError(this)">
+          <button type="button" class="lb-play" id="lbPlay" aria-label="Play the campaign film"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5.5v13l11-6.5z"/></svg></button>
+          <span class="lb-film-tag">Autumn 2026</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Palette -->
+    <section class="lb-palette" aria-labelledby="paletteHeading">
+      <div class="container">
+        <header class="lb-palette-head">
+          <h2 id="paletteHeading">The season in <em>five tones</em></h2>
+          <p>The palette that ties every chapter together. Each colour was drawn from a fabric on our cutting table.</p>
+        </header>
+      </div>
+      <div class="lb-swatches">
+        <div class="lb-swatch" style="--c:#111111;--t:#D8C8A4"><strong>Obsidian</strong><span>Raw silk crepe</span></div>
+        <div class="lb-swatch" style="--c:#F4F0E9;--t:#111111"><strong>Ivory</strong><span>Silk habotai</span></div>
+        <div class="lb-swatch" style="--c:#E7E2D7;--t:#111111"><strong>Sand</strong><span>Belgian linen</span></div>
+        <div class="lb-swatch" style="--c:#B9A073;--t:#111111"><strong>Champagne</strong><span>Hand-stitched detail</span></div>
+        <div class="lb-swatch" style="--c:#8B8985;--t:#ffffff"><strong>Stone</strong><span>Virgin wool</span></div>
+      </div>
+    </section>
+
+    <section class="lb-edit" id="fullEdit" data-lb-group="edit" aria-labelledby="editHeading">
+      <div class="container">
+        <header class="lb-edit-head">
+          <div>
+            <h2 id="editHeading">The Full <em>Edit</em></h2>
+            <p>Every look from the season in one place. Choose an occasion, then open any look to see it full screen.</p>
+          </div>
+          <div class="lb-filters" role="group" aria-label="Filter looks by occasion">
+            <button type="button" class="filter-pill is-active" data-occasion-filter="all" aria-pressed="true">All Looks</button>
+            <button type="button" class="filter-pill" data-occasion-filter="everyday" aria-pressed="false">Everyday</button>
+            <button type="button" class="filter-pill" data-occasion-filter="work" aria-pressed="false">Work</button>
+            <button type="button" class="filter-pill" data-occasion-filter="evening" aria-pressed="false">Evening</button>
+            <button type="button" class="filter-pill" data-occasion-filter="eid" aria-pressed="false">Eid</button>
+          </div>
+        </header>
+        <p class="lb-count" id="lbCount" aria-live="polite">Showing 8 looks</p>
+        <div class="lb-grid" id="lbGrid">
+        <figure class="lb-item lb-card" data-lb data-lb-id="f1" data-lb-title="Nocturne Silk Abaya" data-lb-sub="Raw silk crepe" data-lb-product="sn-01" data-lb-note="Pair with a tonal silk scarf and a single piece of gold." data-occasion="evening eid">
+          <div class="lb-frame">
+            <img src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&w=800&q=85" alt="Nocturne Silk Abaya" loading="lazy" onerror="handleImageError(this)">
+            <figcaption class="lb-cap"><strong>Nocturne Silk Abaya</strong><span>Raw silk crepe</span></figcaption>
+            <button type="button" class="lb-expand" aria-label="View Nocturne Silk Abaya full screen"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M4 9V4h5M20 9V4h-5M4 15v5h5M20 15v5h-5"/></svg></button>
+          </div>
+        </figure>
+        <figure class="lb-item lb-card" data-lb data-lb-id="f2" data-lb-title="Draped Sand Co-ord" data-lb-sub="Crepe" data-lb-product="sn-02" data-lb-note="Wear as a set or split it across the week." data-occasion="everyday work">
+          <div class="lb-frame">
+            <img src="https://images.unsplash.com/photo-1490481651871-ab68de25d43d?auto=format&fit=crop&w=800&q=85" alt="Draped Sand Co-ord" loading="lazy" onerror="handleImageError(this)">
+            <figcaption class="lb-cap"><strong>Draped Sand Co-ord</strong><span>Crepe</span></figcaption>
+            <button type="button" class="lb-expand" aria-label="View Draped Sand Co-ord full screen"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M4 9V4h5M20 9V4h-5M4 15v5h5M20 15v5h-5"/></svg></button>
+          </div>
+        </figure>
+        <figure class="lb-item lb-card" data-lb data-lb-id="f3" data-lb-title="Pleated Column Dress" data-lb-sub="Hand-pleated" data-lb-product="sn-03" data-lb-note="Steam, never iron. The pleats hold best when hung." data-occasion="evening eid">
+          <div class="lb-frame">
+            <img src="https://images.unsplash.com/photo-1539109136881-3be0616acf4b?auto=format&fit=crop&w=800&q=85" alt="Pleated Column Dress" loading="lazy" onerror="handleImageError(this)">
+            <figcaption class="lb-cap"><strong>Pleated Column Dress</strong><span>Hand-pleated</span></figcaption>
+            <button type="button" class="lb-expand" aria-label="View Pleated Column Dress full screen"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M4 9V4h5M20 9V4h-5M4 15v5h5M20 15v5h-5"/></svg></button>
+          </div>
+        </figure>
+        <figure class="lb-item lb-card" data-lb data-lb-id="f4" data-lb-title="Wool Trench Cape" data-lb-sub="Heavy drape wool" data-lb-product="sn-04" data-lb-note="Belt it for shape, or leave it open for drama." data-occasion="work everyday">
+          <div class="lb-frame">
+            <img src="https://images.unsplash.com/photo-1544441893-675973e31985?auto=format&fit=crop&w=800&q=85" alt="Wool Trench Cape" loading="lazy" onerror="handleImageError(this)">
+            <figcaption class="lb-cap"><strong>Wool Trench Cape</strong><span>Heavy drape wool</span></figcaption>
+            <button type="button" class="lb-expand" aria-label="View Wool Trench Cape full screen"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M4 9V4h5M20 9V4h-5M4 15v5h5M20 15v5h-5"/></svg></button>
+          </div>
+        </figure>
+        <figure class="lb-item lb-card" data-lb data-lb-id="f5" data-lb-title="Mirage Batwing Abaya" data-lb-sub="Fluid georgette" data-lb-product="sn-05" data-lb-note="Let the georgette settle, then move." data-occasion="everyday eid">
+          <div class="lb-frame">
+            <img src="https://images.unsplash.com/photo-1509631179647-0177331693ae?auto=format&fit=crop&w=800&q=85" alt="Mirage Batwing Abaya" loading="lazy" onerror="handleImageError(this)">
+            <figcaption class="lb-cap"><strong>Mirage Batwing Abaya</strong><span>Fluid georgette</span></figcaption>
+            <button type="button" class="lb-expand" aria-label="View Mirage Batwing Abaya full screen"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M4 9V4h5M20 9V4h-5M4 15v5h5M20 15v5h-5"/></svg></button>
+          </div>
+        </figure>
+        <figure class="lb-item lb-card" data-lb data-lb-id="f6" data-lb-title="Monolith Linen Co-ord" data-lb-sub="Belgian linen" data-lb-product="sn-06" data-lb-note="Linen is meant to crease. Steam lightly." data-occasion="everyday work">
+          <div class="lb-frame">
+            <img src="https://images.unsplash.com/photo-1485230895905-ec40ba36b9bc?auto=format&fit=crop&w=800&q=85" alt="Monolith Linen Co-ord" loading="lazy" onerror="handleImageError(this)">
+            <figcaption class="lb-cap"><strong>Monolith Linen Co-ord</strong><span>Belgian linen</span></figcaption>
+            <button type="button" class="lb-expand" aria-label="View Monolith Linen Co-ord full screen"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M4 9V4h5M20 9V4h-5M4 15v5h5M20 15v5h-5"/></svg></button>
+          </div>
+        </figure>
+        <figure class="lb-item lb-card" data-lb data-lb-id="f7" data-lb-title="Sovereign Silk Gown" data-lb-sub="Silk habotai" data-lb-product="sn-07" data-lb-note="Cut on the bias, so it moves with a slight delay." data-occasion="evening eid">
+          <div class="lb-frame">
+            <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=800&q=85" alt="Sovereign Silk Gown" loading="lazy" onerror="handleImageError(this)">
+            <figcaption class="lb-cap"><strong>Sovereign Silk Gown</strong><span>Silk habotai</span></figcaption>
+            <button type="button" class="lb-expand" aria-label="View Sovereign Silk Gown full screen"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M4 9V4h5M20 9V4h-5M4 15v5h5M20 15v5h-5"/></svg></button>
+          </div>
+        </figure>
+        <figure class="lb-item lb-card" data-lb data-lb-id="f8" data-lb-title="Cocoon Coat" data-lb-sub="Cashmere &amp; wool" data-lb-product="sn-08" data-lb-note="Keep everything beneath tonal." data-occasion="work evening">
+          <div class="lb-frame">
+            <img src="https://images.unsplash.com/photo-1512436991641-6745cdb1723f?auto=format&fit=crop&w=800&q=85" alt="Cocoon Coat" loading="lazy" onerror="handleImageError(this)">
+            <figcaption class="lb-cap"><strong>Cocoon Coat</strong><span>Cashmere &amp; wool</span></figcaption>
+            <button type="button" class="lb-expand" aria-label="View Cocoon Coat full screen"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M4 9V4h5M20 9V4h-5M4 15v5h5M20 15v5h-5"/></svg></button>
+          </div>
+        </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- Style notes -->
+    <section class="lb-notes" aria-labelledby="notesHeading">
+      <div class="container">
+        <h2 class="shop-promises-title" id="notesHeading">Three <em>style notes</em></h2>
+        <div class="lb-notes-grid">
+          <article class="lb-note reveal-fade stagger-1">
+            <span class="lb-note-label">For the evening</span>
+            <h3>Nocturne abaya, tonal scarf</h3>
+            <p>Keep the palette to one colour and let the silk do the talking. One piece of gold at the wrist is plenty.</p>
+            <button type="button" class="coll-cta" data-action="open-detail" data-product-id="sn-01">View the abaya</button>
+          </article>
+          <article class="lb-note reveal-fade stagger-2">
+            <span class="lb-note-label">For the office</span>
+            <h3>Sand co-ord, structured bag</h3>
+            <p>Wear the set whole on Monday, then split it: the draped top with dark trousers by Thursday.</p>
+            <button type="button" class="coll-cta" data-action="open-detail" data-product-id="sn-02">View the co-ord</button>
+          </article>
+          <article class="lb-note reveal-fade stagger-3">
+            <span class="lb-note-label">For the cold</span>
+            <h3>Cocoon coat, nothing else</h3>
+            <p>Dress tonal underneath and let the coat be the statement. It folds around you in a single line.</p>
+            <button type="button" class="coll-cta" data-action="open-detail" data-product-id="sn-08">View the coat</button>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Closing -->
+    <section class="shop-quote" aria-label="Closing statement">
+      <div class="container">
+        <blockquote class="reveal-fade stagger-1">Wear the day. Remember the hour.</blockquote>
+        <cite>The SENORA Atelier</cite>
+        <div class="lb-closing-cta"><a href="shop.html" class="shop-btn-gold" style="background:var(--color-obsidian);border-color:var(--color-obsidian);color:var(--color-champagne-soft)">Shop The Collection</a></div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Full-screen look viewer -->
+  <div class="lb-viewer" id="lbViewer" role="dialog" aria-modal="true" aria-label="Look viewer" aria-hidden="true">
+    <button type="button" class="lb-v-close" id="lbClose" aria-label="Close viewer"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></button>
+    <div class="lb-v-stage">
+      <button type="button" class="lb-v-nav lb-v-prev" id="lbPrev" aria-label="Previous look"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><polyline points="15 18 9 12 15 6"/></svg></button>
+      <img id="lbViewerImg" src="" alt="">
+      <button type="button" class="lb-v-nav lb-v-next" id="lbNext" aria-label="Next look"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><polyline points="9 18 15 12 9 6"/></svg></button>
+    </div>
+    <aside class="lb-v-info">
+      <span class="lb-v-count" id="lbViewerCount"></span>
+      <span class="lb-v-sub" id="lbViewerSub"></span>
+      <h3 class="lb-v-title" id="lbViewerTitle"></h3>
+      <div class="lb-v-shop" id="lbViewerShop">
+        <span class="lb-v-price" id="lbViewerPrice"></span>
+        <div class="lb-v-note-wrap">
+          <span class="lb-v-note-label">Style note</span>
+          <p class="lb-v-note" id="lbViewerNote"></p>
+        </div>
+        <div class="lb-v-actions">
+          <button type="button" class="shop-btn-gold" id="lbViewerAdd" data-action="quick-add" data-product-id="">Shop This Look</button>
+          <button type="button" class="shop-btn-ghost" id="lbViewerDetails" data-action="open-detail" data-product-id="">Details</button>
+        </div>
+        <button type="button" class="lb-v-save" id="lbViewerSave" data-action="toggle-wishlist" data-product-id="" aria-pressed="false">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+          <span class="when-off">Save To Wishlist</span><span class="when-on">Saved</span>
+        </button>
+      </div>
+      <p class="lb-v-note lb-v-note-only" id="lbViewerNoteOnly"></p>
+      <button type="button" class="lb-v-copy" id="lbViewerCopy">Copy Link To This Look</button>
+    </aside>
+  </div>
+
+  <!-- 10. Polished Editorial Footer (Exact Match with Homepage) -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      
+      <div class="footer-top">
+        
+        <!-- Brand Information -->
+        <div class="footer-brand">
+          <span class="footer-logo">SENORA</span>
+          <p class="footer-tagline">
+            An independent modest luxury fashion house dedicated to architectural silhouettes, pure textiles, and quiet distinction.
+          </p>
+          <div class="footer-atelier-badge">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/></svg>
+            <span>Lahore • Karachi • Islamabad</span>
+          </div>
+        </div>
+
+        <!-- Column 1: Collections -->
+        <div class="footer-col">
+          <h6>Collections</h6>
+          <ul class="footer-links">
+            <li><a href="shop.html">The Complete Archive</a></li>
+            <li><a href="shop.html#abayas">Signature Abayas</a></li>
+            <li><a href="shop.html#coords">Tailored Co-ords</a></li>
+            <li><a href="shop.html#dresses">Column Dresses</a></li>
+            <li><a href="shop.html#outerwear">Outerwear & Capes</a></li>
+            <li><a href="index.html#campaign">The Alabaster Series</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 2: Client Care -->
+        <div class="footer-col">
+          <h6>Client Services</h6>
+          <ul class="footer-links">
+            <li><a href="size-guide.html#bespoke">Bespoke Fitting Services</a></li>
+            <li><a href="shipping.html#delivery">Complimentary Delivery Guide</a></li>
+            <li><a href="care.html">Care & Silk Preservation</a></li>
+            <li><a href="shipping.html#returns">Exchange Policy</a></li>
+            <li><a href="concierge.html#appointment">Private Salon Appointments</a></li>
+            <li><a href="concierge.html">Contact Atelier Concierge</a></li>
+            <li><a href="account.html">My Account</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 3: Atelier Ethics -->
+        <div class="footer-col">
+          <h6>Atelier & Ethics</h6>
+          <ul class="footer-links">
+            <li><a href="story.html#manifesto">Our Manifesto</a></li>
+            <li><a href="story.html#artisans">Artisan Transparency</a></li>
+            <li><a href="story.html#materials">Natural Fiber Commitments</a></li>
+            <li><a href="story.html#materials">Zero-Waste Pattern Cutting</a></li>
+            <li><a href="concierge.html#contact">Careers at SENORA</a></li>
+          </ul>
+        </div>
+
+      </div>
+
+      <!-- Payment & Security Strip -->
+      <div class="footer-payment-strip">
+        <div class="payment-methods">
+          <span>Accepted in Pakistan:</span>
+          <span class="payment-tag">Cash on Delivery (COD)</span>
+          <span class="payment-tag">Direct Bank Transfer</span>
+          <span class="payment-tag">Visa / Mastercard</span>
+          <span class="payment-tag">UnionPay</span>
+        </div>
+        <div class="footer-region">
+          <span>Region: Pakistan (PKR ₨)</span>
+        </div>
+      </div>
+
+      <!-- Copyright Bottom Bar -->
+      <div class="footer-bottom">
+        <p>&copy; 2026 SENORA Modest Fashion Atelier. All rights reserved. Demo Experience.</p>
+        <div style="display: flex; gap: 1.5rem;">
+          <a href="privacy.html">Privacy Policy</a>
+          <a href="terms.html">Terms of Service</a>
+          <a href="accessibility.html">Accessibility Statement</a>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- =========================================================================
+       Global Interactive Overlays (Shared across SENORA)
+       ========================================================================= -->
+
+  <!-- Shopping Bag / Cart Drawer -->
+  <div class="cart-drawer-overlay" id="cartDrawerOverlay" aria-hidden="true"></div>
+  <aside 
+    class="cart-drawer" 
+    id="cartDrawer" 
+    role="dialog" 
+    aria-modal="true" 
+    aria-labelledby="cartDrawerTitle" 
+    aria-hidden="true"
+  >
+    <div class="cart-header">
+      <h3 id="cartDrawerTitle">Shopping Bag</h3>
+      <button class="drawer-close-btn" id="cartCloseBtn" type="button" aria-label="Close shopping bag drawer">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <line x1="18" y1="6" x2="6" y2="18"></line>
+          <line x1="6" y1="6" x2="18" y2="18"></line>
+        </svg>
+      </button>
+    </div>
+
+    <!-- Free Shipping Progress Meter -->
+    <div class="shipping-meter-box">
+      <p class="shipping-meter-text" id="shippingMeterText">
+        Add <strong>PKR 25,000</strong> to qualify for complimentary delivery.
+      </p>
+      <div class="shipping-progress-bar" role="progressbar" aria-label="Progress towards free delivery">
+        <div class="shipping-progress-fill" id="shippingProgressBar" style="width: 0%;"></div>
+      </div>
+    </div>
+
+    <!-- Scrollable Item List -->
+    <div class="cart-items-container" id="cartItemsContainer">
+      <!-- Populated via JavaScript -->
+    </div>
+
+    <!-- Cart Footer & Checkout Action -->
+    <div class="cart-footer">
+      <div class="cart-subtotal-row">
+        <span>Estimated Subtotal</span>
+        <strong id="cartSubtotalAmount">PKR 0</strong>
+      </div>
+      <p class="cart-note">Taxes calculated at checkout. Complimentary alterations included.</p>
+      <button class="btn btn-primary cart-checkout-btn" id="cartCheckoutBtn" type="button">
+        Proceed to Checkout
+      </button>
+      <span class="cart-demo-badge">Demo Mode: No payment is processed</span>
+    </div>
+  </aside>
+
+  <!-- Interactive Wishlist Drawer -->
+  <div class="cart-drawer-overlay" id="wishlistDrawerOverlay" aria-hidden="true"></div>
+  <aside 
+    class="cart-drawer" 
+    id="wishlistDrawer" 
+    role="dialog" 
+    aria-modal="true" 
+    aria-labelledby="wishlistDrawerTitle" 
+    aria-hidden="true"
+  >
+    <div class="cart-header">
+      <h3 id="wishlistDrawerTitle">Saved Pieces</h3>
+      <button class="drawer-close-btn" id="wishlistCloseBtn" type="button" aria-label="Close saved pieces drawer">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <line x1="18" y1="6" x2="6" y2="18"></line>
+          <line x1="6" y1="6" x2="18" y2="18"></line>
+        </svg>
+      </button>
+    </div>
+
+    <div class="shipping-meter-box" style="background-color: var(--color-white); border-bottom: var(--border-hairline);">
+      <p class="shipping-meter-text" style="color: var(--color-stone-muted); margin-bottom: 0;">
+        Pieces saved for your private curation.
+      </p>
+    </div>
+
+    <!-- Scrollable Wishlist Items Container -->
+    <div class="cart-items-container" id="wishlistItemsContainer">
+      <!-- Populated via JavaScript -->
+    </div>
+
+    <!-- Wishlist Footer -->
+    <div class="cart-footer">
+      <button class="btn btn-primary" style="width: 100%;" id="wishlistExploreBtn" type="button">
+        Explore The Edit
+      </button>
+      <span class="cart-demo-badge">In-Memory Session Wishlist</span>
+    </div>
+  </aside>
+
+  <!-- Search Overlay Modal -->
+  <div 
+    class="search-modal" 
+    id="searchModal" 
+    role="dialog" 
+    aria-modal="true" 
+    aria-labelledby="searchModalTitle" 
+    aria-hidden="true"
+  >
+    <div class="search-container">
+      <button class="search-close-btn" id="searchCloseBtn" type="button" aria-label="Close search overlay">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <line x1="18" y1="6" x2="6" y2="18"></line>
+          <line x1="6" y1="6" x2="18" y2="18"></line>
+        </svg>
+      </button>
+
+      <h3 class="search-title" id="searchModalTitle">Search Atelier Collection</h3>
+
+      <div class="search-input-wrapper">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <circle cx="11" cy="11" r="8"></circle>
+          <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+        </svg>
+        <input 
+          type="search" 
+          id="searchInput" 
+          class="search-input" 
+          placeholder="Search abayas, co-ords, dresses, outerwear..." 
+          autocomplete="off"
+        >
+      </div>
+
+      <!-- Quick Search Suggestions -->
+      <div class="search-popular-tags">
+        <span style="color: var(--color-stone); font-size: 0.75rem;">Suggestions:</span>
+        <button type="button" class="search-tag">Silk Abaya</button>
+        <button type="button" class="search-tag">Sand Co-ord</button>
+        <button type="button" class="search-tag">Column Dress</button>
+        <button type="button" class="search-tag">Trench Cape</button>
+      </div>
+
+      <!-- Results Container -->
+      <div class="search-results-list" id="searchResultsList" role="region" aria-live="polite">
+        <!-- Live search matches injected via JavaScript -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Premium Product Detail Modal -->
+  <div class="product-modal-backdrop" id="productModalBackdrop" aria-hidden="true"></div>
+  <div 
+    class="product-modal" 
+    id="productModal" 
+    role="dialog" 
+    aria-modal="true" 
+    aria-labelledby="modalProductTitle" 
+    aria-hidden="true"
+  >
+    <div class="product-modal-container">
+      <button class="product-modal-close" id="productModalClose" type="button" aria-label="Close product details">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <line x1="18" y1="6" x2="6" y2="18"></line>
+          <line x1="6" y1="6" x2="18" y2="18"></line>
+        </svg>
+      </button>
+
+      <div class="product-modal-body" id="productModalBody">
+        <!-- Populated via JavaScript -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Mobile Navigation Drawer & Dedicated Backdrop -->
+  <div class="mobile-nav-overlay" id="mobileNavOverlay" aria-hidden="true"></div>
+  <aside 
+    class="mobile-nav-drawer" 
+    id="mobileNavDrawer" 
+    role="dialog" 
+    aria-modal="true" 
+    aria-label="Mobile Navigation"
+  >
+    <div class="mobile-nav-header">
+      <span class="brand-title" style="font-size: 1.5rem;">SENORA</span>
+      <button id="mobileNavClose" type="button" aria-label="Close navigation" style="padding: 0.5rem;">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <line x1="18" y1="6" x2="6" y2="18"></line>
+          <line x1="6" y1="6" x2="18" y2="18"></line>
+        </svg>
+      </button>
+    </div>
+
+    <nav class="mobile-nav-links">
+      <a href="index.html" data-nav="home">Home</a>
+      <a href="shop.html" data-nav="shop">Shop</a>
+      <a href="collections.html" data-nav="collections">Collections</a>
+      <a href="lookbook.html" class="is-active" data-nav="lookbook">Lookbook</a>
+      <a href="story.html" data-nav="story">Our Story</a>
+      <a href="account.html" data-account-open="auto" data-account-label>Sign In / Create Account</a>
+    </nav>
+
+    <div class="mobile-nav-footer">
+      <div style="font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.1em; color: var(--color-stone);">
+        Currency: Pakistan (PKR)
+      </div>
+      <p style="font-size: 0.8125rem; color: var(--color-stone-muted); line-height: 1.5;">
+        Complimentary delivery across Pakistan on orders over PKR 25,000.
+      </p>
+    </div>
+  </aside>
+
+  <!-- Toast Notification Hub -->
+  <div class="toast-container" id="toastContainer" aria-live="polite"></div>
+
+  <!-- Shared Application Logic -->
+  <script src="js/main.js"></script>
+  <script src="js/account.js"></script>
+</body>
+</html>
